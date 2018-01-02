@@ -7,14 +7,14 @@ namespace CSharpIntermediate_Classes
     {
         public string name;//making a setter method should be better, than making 
         public int id;     //these public
-        public List<Order> Orders;
+        public readonly List<Order> Orders;//using readonly to protect code from developer accidentally initializing again
 
         //Constructors
         //Only define constructors when it is a MUST, else they clog the code
         //for eg, only this first constructor is necessary, every other is optional
         public Person()
         {
-            Orders = new List<Order>();
+            Orders = new List<Order>();//this is not recommended, an easier way is to initialize while declaration
         }
 
         public Person(string name) : this()//doing this() makes code hard to read
