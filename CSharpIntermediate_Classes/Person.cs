@@ -10,7 +10,12 @@ namespace CSharpIntermediate_Classes
 
         public readonly List<Order> Orders;//using readonly to protect code from developer accidentally initializing again
 
-        private DateTime birthDate;//learn to use setters/getter
+        private DateTime _birthDate;
+
+		private int _carrots;
+
+        public TimeSpan TimeTillEndYear { get; set; }//this is a auto-implemented property, easy way to get/set
+        public string Name { get; set; }//use prop as code-snippet
 
         //Constructors
         //Only define constructors when it is a MUST, else they clog the code
@@ -30,6 +35,26 @@ namespace CSharpIntermediate_Classes
             this.id = id;
         }
 
+        public int AmountOfCarrots //this is a normal property, quicker way to get/set without typing two whole methods
+        {
+            get
+            {
+                return _carrots;
+            }
+            set
+            {
+                _carrots = value;
+            }
+        }
+
+        public TimeSpan TimeFromBeginningYear//this is a property that does not allow to set its value
+        {
+            get
+            {
+                return new TimeSpan(365, 0, 0, 0) - TimeTillEndYear;
+            }
+        }
+
 
         public static Person CreatePersonWithName(string name)
         {
@@ -44,11 +69,11 @@ namespace CSharpIntermediate_Classes
         }
 
         public void SetBirthDate(int day, int month, int year){
-            birthDate = new DateTime(year, month, day);
+            _birthDate = new DateTime(year, month, day);
         }
 
         public DateTime GetBirthDay(){
-            return birthDate;
+            return _birthDate;
         }
     }
 }
