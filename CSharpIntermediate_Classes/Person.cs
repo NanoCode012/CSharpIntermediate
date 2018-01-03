@@ -7,7 +7,10 @@ namespace CSharpIntermediate_Classes
     {
         public string name;//making a setter method should be better, than making 
         public int id;     //these public
+
         public readonly List<Order> Orders;//using readonly to protect code from developer accidentally initializing again
+
+        private DateTime birthDate;//learn to use setters/getter
 
         //Constructors
         //Only define constructors when it is a MUST, else they clog the code
@@ -40,5 +43,12 @@ namespace CSharpIntermediate_Classes
             Console.WriteLine("My name is {0}", name);
         }
 
+        public void SetBirthDate(int day, int month, int year){
+            birthDate = new DateTime(year, month, day);
+        }
+
+        public DateTime GetBirthDay(){
+            return birthDate;
+        }
     }
 }
