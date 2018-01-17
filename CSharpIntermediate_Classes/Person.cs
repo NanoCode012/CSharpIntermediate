@@ -22,15 +22,15 @@ namespace CSharpIntermediate_Classes
         //for eg, only this first constructor is necessary, every other is optional
         public Person()
         {
-            Orders = new List<Order>();//this is not recommended, an easier way is to initialize while declaration
+            Orders = new List<Order>();//this is not recommended, an easier way is to initialize while declaration. NOT TRUE, DO AS LONG AS CONSISTENT!
         }
 
-        public Person(string name) : this()//doing this() makes code hard to read
+        public Person(string name) : this()//doing this() makes code confusing to read
         {
             this.name = name;
         }
 
-        public Person(string name, int id) : this(name)//doing this() makes code hard to read
+        public Person(string name, int id) : this(name)//doing this() makes code confusing to read
         {
             this.id = id;
         }

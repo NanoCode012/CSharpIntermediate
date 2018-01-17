@@ -1,4 +1,6 @@
-﻿namespace CSharpIntermediate_Classes
+﻿using System;
+
+namespace CSharpIntermediate_Classes
 {
     class MainClass
     {
@@ -24,7 +26,39 @@
             personC.Introduce();
             personD.Introduce();
 
+            //Testing Properties
+            var personE = new Person();
+            personE.AmountOfCarrots = 8;
 
+            //Testing Indexers
+            var cookie = new HttpCookie();
+            cookie["help"] = "eight";
+            Console.WriteLine(cookie["help"]);
+
+            //Stopwatch
+            var stopwatch = new Stopwatch();
+            while(true)
+            {
+                Console.WriteLine("Option: ");
+                Console.WriteLine("1. Set Start");
+                Console.WriteLine("2. Set Stop");
+                Console.WriteLine("3. Get Duration");
+                Console.WriteLine("4. Quit");
+                var opt = Char.GetNumericValue(Console.ReadLine()[0]);
+                if (Math.Abs(opt - 4) < 0.1) break;
+                switch(opt)
+                {
+                    case 1:
+                        stopwatch.Start();
+                        break;
+                    case 2:
+                        stopwatch.Stop();
+                        break;
+                    case 3:
+                        Console.WriteLine(stopwatch.Duration());
+                        break;
+                }
+            }
         }
     }
 }
