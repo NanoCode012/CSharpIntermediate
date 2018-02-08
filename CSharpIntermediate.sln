@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_Classes", "CSharpIntermediate_Classes\CSharpIntermediate_Classes.csproj", "{9FD604B8-8257-4701-B73F-9AC8F2B74A1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_AssociationBetweenClasses", "CSharpIntermediate_AssociationBetweenClasses\CSharpIntermediate_AssociationBetweenClasses.csproj", "{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -13,5 +15,9 @@ Global
 		{9FD604B8-8257-4701-B73F-9AC8F2B74A1B}.Debug|x86.Build.0 = Debug|x86
 		{9FD604B8-8257-4701-B73F-9AC8F2B74A1B}.Release|x86.ActiveCfg = Release|x86
 		{9FD604B8-8257-4701-B73F-9AC8F2B74A1B}.Release|x86.Build.0 = Release|x86
+		{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}.Debug|x86.ActiveCfg = Debug|x86
+		{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}.Debug|x86.Build.0 = Debug|x86
+		{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}.Release|x86.ActiveCfg = Release|x86
+		{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 EndGlobal
