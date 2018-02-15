@@ -12,11 +12,14 @@ namespace CSharpIntermediate_Inheritance
             var customer = new Customer();
             customer.Promote();
 
+
             //Internal - Cannot access due to protection level
             /*var rating = new CalculateRating();*/
 
+
             //Constructors Inheritance
             var car = new Car("111");
+
 
 			//Upcasting - Cast from Derived(Child) to Base(Parent) class
             Text text = new Text();
@@ -35,6 +38,16 @@ namespace CSharpIntermediate_Inheritance
             Text txt2 = shap as Text;//Another way of doing it, but safer
             if (txt2 != null) {} //Check if txt2's cast was successful
             if (txt2 is Text) {} //Check if txt2's cast was successful
+
+
+            //Boxing - Cast from value type to reference type - Move memory allocation from stack to heap - Performance Penalty
+            int num = 10;
+            object obj = num;
+
+
+            //Unboxing - Cast from reference type to value type - Performance Penalty
+            int number = (int)obj;
+
 
         }
     }
