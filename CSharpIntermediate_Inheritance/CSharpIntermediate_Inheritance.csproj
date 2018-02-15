@@ -36,6 +36,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Car.cs" />
     <Compile Include="Vehicle.cs" />
+    <Compile Include="Shape.cs" />
+    <Compile Include="Text.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharpIntermediate_Inheritance_Internal\CSharpIntermediate_Inheritance_Internal.csproj">
