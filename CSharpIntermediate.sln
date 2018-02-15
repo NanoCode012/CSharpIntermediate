@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_Classes"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_AssociationBetweenClasses", "CSharpIntermediate_AssociationBetweenClasses\CSharpIntermediate_AssociationBetweenClasses.csproj", "{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_Inheritance", "CSharpIntermediate_Inheritance\CSharpIntermediate_Inheritance.csproj", "{9DC23B03-CC29-470E-9728-3A2A79442905}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_Inheritance_Internal", "CSharpIntermediate_Inheritance_Internal\CSharpIntermediate_Inheritance_Internal.csproj", "{0BFFD005-85DE-45E1-9693-B4E1A7CDBCF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -19,5 +23,13 @@ Global
 		{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}.Debug|x86.Build.0 = Debug|x86
 		{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}.Release|x86.ActiveCfg = Release|x86
 		{36F24FE2-8BF8-4C88-8984-9F54D6B86CEB}.Release|x86.Build.0 = Release|x86
+		{9DC23B03-CC29-470E-9728-3A2A79442905}.Debug|x86.ActiveCfg = Debug|x86
+		{9DC23B03-CC29-470E-9728-3A2A79442905}.Debug|x86.Build.0 = Debug|x86
+		{9DC23B03-CC29-470E-9728-3A2A79442905}.Release|x86.ActiveCfg = Release|x86
+		{9DC23B03-CC29-470E-9728-3A2A79442905}.Release|x86.Build.0 = Release|x86
+		{0BFFD005-85DE-45E1-9693-B4E1A7CDBCF7}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0BFFD005-85DE-45E1-9693-B4E1A7CDBCF7}.Debug|x86.Build.0 = Debug|Any CPU
+		{0BFFD005-85DE-45E1-9693-B4E1A7CDBCF7}.Release|x86.ActiveCfg = Release|Any CPU
+		{0BFFD005-85DE-45E1-9693-B4E1A7CDBCF7}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
