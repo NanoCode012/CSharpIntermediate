@@ -1,6 +1,5 @@
 ﻿using CSharpIntermediate_Inheritance_Internal;
 using System;
-using System.IO;
 
 namespace CSharpIntermediate_Inheritance
 {
@@ -48,7 +47,14 @@ namespace CSharpIntermediate_Inheritance
             //Unboxing - Cast from reference type to value type - Performance Penalty
             int number = (int)obj;
 
-
+            //Stack example
+            var stack = new Stack<int>();
+            stack.Push(5);
+            stack.Push(3);
+            stack.Push(8);
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Pop());
         }
     }
 }

@@ -38,6 +38,9 @@
     <Compile Include="Vehicle.cs" />
     <Compile Include="Shape.cs" />
     <Compile Include="Text.cs" />
+    <Compile Include="LinkedList.cs" />
+    <Compile Include="Node.cs" />
+    <Compile Include="Stack.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharpIntermediate_Inheritance_Internal\CSharpIntermediate_Inheritance_Internal.csproj">
