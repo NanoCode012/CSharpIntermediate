@@ -15,17 +15,6 @@ namespace CSharpIntermediate_Inheritance
             this.head = n;
         }
 
-        public void InsertLast(Node<T> n)
-        {
-            if (n == null) throw new ArgumentNullException(nameof(n), "Cannot insert null");
-            if (head == null) head = n;
-            else {
-                Node<T> start = head;
-                while (start.Next != null) start = start.Next;
-                start.Next = n;
-            }
-        }
-
         public void InsertFirst(Node<T> n)
         {
             if (n == null) throw new ArgumentNullException(nameof(n), "Cannot insert null");
@@ -37,16 +26,37 @@ namespace CSharpIntermediate_Inheritance
             }
         }
 
+        public void InsertLast(Node<T> n)
+        {
+            if (n == null) throw new ArgumentNullException(nameof(n), "Cannot insert null");
+            if (head == null) head = n;
+            else
+            {
+                Node<T> start = head;
+                while (start.Next != null) start = start.Next;
+                start.Next = n;
+            }
+        }
+
+        public Node<T> PopFirst()
+        {
+            Node<T> start = head;
+            if (start == null) throw new InvalidOperationException("Cannot Pop empty.");
+            head = head.Next;
+            return start;
+        }
+
         public Node<T> PopLast()
         {
             Node<T> start = head;
             if (start == null) throw new InvalidOperationException("Cannot Pop empty.");
-            else if (start.Next == null) 
+            else if (start.Next == null)
             {
                 head = null;
                 return start;
             }
-            else {
+            else
+            {
                 while (start.Next.Next != null)
                 {
                     start = start.Next;
@@ -58,12 +68,19 @@ namespace CSharpIntermediate_Inheritance
 
         }
 
-        public Node<T> PopFirst()
+        public Node<T> PeekFirst()
         {
-            Node<T> start = head;
-            if (start == null) throw new InvalidOperationException("Cannot Pop empty.");
-            head = head.Next;
-            return start;
+            return head;
+        }
+
+        public Node<T> PeekLast()
+        {
+            var temp = head;
+            while (temp.Next != null)
+            {
+                temp = temp.Next;
+            }
+            return temp;
         }
 
         public void Clear()

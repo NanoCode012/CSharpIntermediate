@@ -52,9 +52,11 @@ namespace CSharpIntermediate_Inheritance
             stack.Push(5);
             stack.Push(3);
             stack.Push(8);
+            stack.Push(10);
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
             Console.WriteLine(stack.Pop());
+            Console.WriteLine(stack.Peek());
         }
     }
 }

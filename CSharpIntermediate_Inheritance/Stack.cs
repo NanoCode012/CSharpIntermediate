@@ -22,5 +22,10 @@
         {
             return list.PopFirst().Data;
         }
+
+        public T Peek()
+        {
+            return list.PeekFirst().Data;
+        }
     }
 }
