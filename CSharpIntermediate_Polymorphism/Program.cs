@@ -15,14 +15,9 @@ namespace CSharpIntermediate_Polymorphism
             shapes.Add(new Square());
             var canvas = new Canvas();
             canvas.DrawShapes(shapes);
-        }
-    }
 
-    class Canvas
-    {
-        public void DrawShapes(List<Shape> shapes)
-        {
-            foreach (var shape in shapes) shape.Draw();
+            //Abstract class cannot be instantiated
+            //var shape = new Shape();
         }
     }
 }
