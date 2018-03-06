@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_Inherita
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_Polymorphism", "CSharpIntermediate_Polymorphism\CSharpIntermediate_Polymorphism.csproj", "{97AA803F-806A-4ACB-AE07-333D4579EE50}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_Interfaces", "CSharpIntermediate_Interfaces\CSharpIntermediate_Interfaces.csproj", "{2E0C5B92-7453-43D6-A4A0-3CF78394F806}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpIntermediate_Interfaces_UnitTests", "CSharpIntermediate_Interfaces_UnitTests\CSharpIntermediate_Interfaces_UnitTests.csproj", "{EC207C6D-6CC7-4D8F-8F19-DBED1D45761A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -37,5 +41,13 @@ Global
 		{97AA803F-806A-4ACB-AE07-333D4579EE50}.Debug|x86.Build.0 = Debug|x86
 		{97AA803F-806A-4ACB-AE07-333D4579EE50}.Release|x86.ActiveCfg = Release|x86
 		{97AA803F-806A-4ACB-AE07-333D4579EE50}.Release|x86.Build.0 = Release|x86
+		{2E0C5B92-7453-43D6-A4A0-3CF78394F806}.Debug|x86.ActiveCfg = Debug|x86
+		{2E0C5B92-7453-43D6-A4A0-3CF78394F806}.Debug|x86.Build.0 = Debug|x86
+		{2E0C5B92-7453-43D6-A4A0-3CF78394F806}.Release|x86.ActiveCfg = Release|x86
+		{2E0C5B92-7453-43D6-A4A0-3CF78394F806}.Release|x86.Build.0 = Release|x86
+		{EC207C6D-6CC7-4D8F-8F19-DBED1D45761A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EC207C6D-6CC7-4D8F-8F19-DBED1D45761A}.Debug|x86.Build.0 = Debug|Any CPU
+		{EC207C6D-6CC7-4D8F-8F19-DBED1D45761A}.Release|x86.ActiveCfg = Release|Any CPU
+		{EC207C6D-6CC7-4D8F-8F19-DBED1D45761A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
