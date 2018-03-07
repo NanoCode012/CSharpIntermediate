@@ -34,19 +34,24 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Car.cs" />
-    <Compile Include="Vehicle.cs" />
-    <Compile Include="Shape.cs" />
-    <Compile Include="Text.cs" />
-    <Compile Include="LinkedList.cs" />
-    <Compile Include="Node.cs" />
-    <Compile Include="Stack.cs" />
+    <Compile Include="Constructor Inheritance\Car.cs" />
+    <Compile Include="Constructor Inheritance\Vehicle.cs" />
+    <Compile Include="Casting\Shape.cs" />
+    <Compile Include="Casting\Text.cs" />
+    <Compile Include="Exercise\Stack.cs" />
+    <Compile Include="Exercise\LinkedList.cs" />
+    <Compile Include="Exercise\Node.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CSharpIntermediate_Inheritance_Internal\CSharpIntermediate_Inheritance_Internal.csproj">
       <Project>{0BFFD005-85DE-45E1-9693-B4E1A7CDBCF7}</Project>
       <Name>CSharpIntermediate_Inheritance_Internal</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Constructor Inheritance\" />
+    <Folder Include="Casting\" />
+    <Folder Include="Exercise\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

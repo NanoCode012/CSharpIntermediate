@@ -34,11 +34,16 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Order.cs" />
-    <Compile Include="HttpCookie.cs" />
-    <Compile Include="Stopwatch.cs" />
-    <Compile Include="Post.cs" />
+    <Compile Include="Indexers\HttpCookie.cs" />
+    <Compile Include="Instantiation and Property\Person.cs" />
+    <Compile Include="Instantiation and Property\Order.cs" />
+    <Compile Include="Exercises\Post.cs" />
+    <Compile Include="Exercises\Stopwatch.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Indexers\" />
+    <Folder Include="Instantiation and Property\" />
+    <Folder Include="Exercises\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

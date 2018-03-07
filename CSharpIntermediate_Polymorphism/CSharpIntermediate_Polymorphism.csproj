@@ -35,12 +35,17 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Position.cs" />
-    <Compile Include="Shape.cs" />
-    <Compile Include="Circle.cs" />
-    <Compile Include="Square.cs" />
-    <Compile Include="Triangle.cs" />
     <Compile Include="Canvas.cs" />
-    <Compile Include="Text.cs" />
+    <Compile Include="Abstract\Shape.cs" />
+    <Compile Include="Sealed\Text.cs" />
+    <Compile Include="Derived\Circle.cs" />
+    <Compile Include="Derived\Square.cs" />
+    <Compile Include="Derived\Triangle.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Abstract\" />
+    <Folder Include="Sealed\" />
+    <Folder Include="Derived\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

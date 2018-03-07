@@ -1,14 +1,5 @@
 ﻿<Properties StartupConfiguration="{2E0C5B92-7453-43D6-A4A0-3CF78394F806}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="CSharpIntermediate_Interfaces/Log.txt">
-    <Files>
-      <File FileName="CSharpIntermediate_Interfaces/Program.cs" Line="19" Column="160" />
-      <File FileName="CSharpIntermediate_Interfaces/DBMigrator.cs" Line="7" Column="18" />
-      <File FileName="CSharpIntermediate_Interfaces/ConsoleLogger.cs" Line="9" Column="46" />
-      <File FileName="CSharpIntermediate_Interfaces/ILogger.cs" Line="4" Column="6" />
-      <File FileName="CSharpIntermediate_Interfaces/FileLogger.cs" Line="10" Column="18" />
-      <File FileName="CSharpIntermediate_Interfaces/Log.txt" Line="2" Column="1" />
-    </Files>
-  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench />
   <MonoDevelop.Ide.ItemProperties.CSharpIntermediate__Inheritance PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

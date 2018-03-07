@@ -22,7 +22,7 @@ namespace CSharpIntermediate_Classes
         //for eg, only this first constructor is necessary, every other is optional
         public Person()
         {
-            Orders = new List<Order>();//this is not recommended, an easier way is to initialize while declaration. NOT TRUE, DO AS LONG AS CONSISTENT!
+            Orders = new List<Order>();//Another way to initialize
         }
 
         public Person(string name) : this()//doing this() makes code confusing to read
@@ -68,6 +68,7 @@ namespace CSharpIntermediate_Classes
             Console.WriteLine("My name is {0}", name);
         }
 
+        //Longer way to get/set variables
         public void SetBirthDate(int day, int month, int year){
             _birthDate = new DateTime(year, month, day);
         }

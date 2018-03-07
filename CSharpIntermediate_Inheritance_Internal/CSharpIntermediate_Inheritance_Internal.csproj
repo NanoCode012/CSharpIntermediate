@@ -30,9 +30,12 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CalculateRating.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Customer.cs" />
+    <Compile Include="Access Modifier\Customer.cs" />
+    <Compile Include="Access Modifier\CalculateRating.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Access Modifier\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

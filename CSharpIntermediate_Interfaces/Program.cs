@@ -19,7 +19,7 @@ namespace CSharpIntermediate_Interfaces
             //It is called dependancy injection where old classes are not changed, 
             //only a new class is added, and MAINCLASS is changed
             //var dbMigrator = new DBMigrator(new ConsoleLogger()); 
-            var dbMigrator = new DBMigrator(new FileLogger(@"/Users/kevinvong/Desktop/Visual Studio/CSharpIntermediate/CSharpIntermediate_Interfaces/Log.txt"));
+            var dbMigrator = new DBMigrator(new FileLogger(@"/Users/kevinvong/Desktop/Visual Studio/CSharpIntermediate/CSharpIntermediate_Interfaces/Extensibility/Log.txt"));
             dbMigrator.Migrate();
         }
     }

@@ -34,11 +34,15 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Presentation.cs" />
-    <Compile Include="TextBox.cs" />
-    <Compile Include="Logger.cs" />
-    <Compile Include="DbMigrator.cs" />
-    <Compile Include="Installer.cs" />
+    <Compile Include="Inheritance\TextBox.cs" />
+    <Compile Include="Inheritance\Presentation.cs" />
+    <Compile Include="Composition\DbMigrator.cs" />
+    <Compile Include="Composition\Installer.cs" />
+    <Compile Include="Composition\Logger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Inheritance\" />
+    <Folder Include="Composition\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
