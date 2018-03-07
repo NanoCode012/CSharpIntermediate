@@ -39,6 +39,13 @@
     <Compile Include="ShippingCalculator.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="Shipment.cs" />
+    <Compile Include="DBMigrator.cs" />
+    <Compile Include="ILogger.cs" />
+    <Compile Include="ConsoleLogger.cs" />
+    <Compile Include="FileLogger.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Log.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
