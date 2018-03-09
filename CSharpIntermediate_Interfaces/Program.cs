@@ -21,6 +21,22 @@ namespace CSharpIntermediate_Interfaces
             //var dbMigrator = new DBMigrator(new ConsoleLogger()); 
             var dbMigrator = new DBMigrator(new FileLogger(@"/Users/kevinvong/Desktop/Visual Studio/CSharpIntermediate/CSharpIntermediate_Interfaces/Extensibility/Log.txt"));
             dbMigrator.Migrate();
+
+            //Polymorphism using Interface
+			var encoder = new VideoEncoder();
+            var vid = new Video();
+            encoder.Register(new MailService());
+            encoder.Register(new SMSService());
+            encoder.Encode(vid);
+
+            //Exercise
+            var workflowEngine = new WorkflowEngine();
+            var workflow = new Workflow();
+            workflow.Add(new UploadActivity());
+            workflow.Add(new NotifyReadyForEncodeActivity());
+            workflow.Add(new NotifyOwnerStartProcessingActivity());
+            workflow.Add(new ChangeStatusOfEncodeToProcessingInDatabaseActivity());
+            workflowEngine.Run(workflow);
         }
     }
 }

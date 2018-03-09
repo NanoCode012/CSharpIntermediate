@@ -1,5 +1,12 @@
 ﻿<Properties StartupConfiguration="{2E0C5B92-7453-43D6-A4A0-3CF78394F806}|Default">
-  <MonoDevelop.Ide.Workbench />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CSharpIntermediate_Interfaces/Exercises/Workflow.cs">
+    <Files>
+      <File FileName="CSharpIntermediate_Interfaces/Program.cs" Line="35" Column="26" />
+      <File FileName="CSharpIntermediate_Interfaces/Exercises/WorkflowEngine.cs" Line="11" Column="1" />
+      <File FileName="CSharpIntermediate_Interfaces/Exercises/IActivity.cs" Line="5" Column="22" />
+      <File FileName="CSharpIntermediate_Interfaces/Exercises/Workflow.cs" Line="5" Column="11" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.ItemProperties.CSharpIntermediate__Inheritance PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

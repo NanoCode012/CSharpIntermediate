@@ -43,6 +43,19 @@
     <Compile Include="Unit Test\OrderProcessor.cs" />
     <Compile Include="Unit Test\Shipment.cs" />
     <Compile Include="Unit Test\ShippingCalculator.cs" />
+    <Compile Include="Polymorphism\INotificationService.cs" />
+    <Compile Include="Polymorphism\MailService.cs" />
+    <Compile Include="Polymorphism\Message.cs" />
+    <Compile Include="Polymorphism\SMSService.cs" />
+    <Compile Include="Polymorphism\Video.cs" />
+    <Compile Include="Polymorphism\VideoEncoder.cs" />
+    <Compile Include="Exercises\WorkflowEngine.cs" />
+    <Compile Include="Exercises\IActivity.cs" />
+    <Compile Include="Exercises\Workflow.cs" />
+    <Compile Include="Exercises\UploadActivity.cs" />
+    <Compile Include="Exercises\NotifyReadyForEncodeActivity.cs" />
+    <Compile Include="Exercises\NotifyOwnerStartProcessingActivity.cs" />
+    <Compile Include="Exercises\ChangeStatusOfEncodeToProcessingInDatabaseActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Extensibility\Log.txt" />
@@ -50,6 +63,8 @@
   <ItemGroup>
     <Folder Include="Extensibility\" />
     <Folder Include="Unit Test\" />
+    <Folder Include="Polymorphism\" />
+    <Folder Include="Exercises\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>
