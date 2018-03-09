@@ -18,6 +18,7 @@ namespace CSharpIntermediate_Inheritance
         public void InsertFirst(Node<T> n)
         {
             if (n == null) throw new ArgumentNullException(nameof(n), "Cannot insert null");
+
             if (head == null) head = n;
             else {
                 Node<T> start = head;
@@ -29,6 +30,7 @@ namespace CSharpIntermediate_Inheritance
         public void InsertLast(Node<T> n)
         {
             if (n == null) throw new ArgumentNullException(nameof(n), "Cannot insert null");
+
             if (head == null) head = n;
             else
             {
@@ -40,17 +42,19 @@ namespace CSharpIntermediate_Inheritance
 
         public Node<T> PopFirst()
         {
-            Node<T> start = head;
-            if (start == null) throw new InvalidOperationException("Cannot Pop empty.");
+            if (head == null) throw new InvalidOperationException("Cannot Pop empty.");
+
+			Node<T> start = head;
             head = head.Next;
             return start;
         }
 
         public Node<T> PopLast()
         {
+			if (head == null) throw new InvalidOperationException("Cannot Pop empty.");
+
             Node<T> start = head;
-            if (start == null) throw new InvalidOperationException("Cannot Pop empty.");
-            else if (start.Next == null)
+            if (start.Next == null)
             {
                 head = null;
                 return start;
@@ -75,12 +79,12 @@ namespace CSharpIntermediate_Inheritance
 
         public Node<T> PeekLast()
         {
-            var temp = head;
-            while (temp.Next != null)
+            Node<T> last = head;
+            while (last.Next != null)
             {
-                temp = temp.Next;
+                last = last.Next;
             }
-            return temp;
+            return last;
         }
 
         public void Clear()

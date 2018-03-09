@@ -2,7 +2,7 @@
 {
     class Stack<T>
     {
-        LinkedList<T> list = new LinkedList<T>();
+        readonly LinkedList<T> _list = new LinkedList<T>();
         public Stack()
         {
 
@@ -15,17 +15,17 @@
 
         public void Push(T data)
         {
-            list.InsertFirst(new Node<T>(data));
+            _list.InsertFirst(new Node<T>(data));
         }
 
         public T Pop()
         {
-            return list.PopFirst().Data;
+            return _list.PopFirst().Data;
         }
 
         public T Peek()
         {
-            return list.PeekFirst().Data;
+            return _list.PeekFirst().Data;
         }
     }
 }

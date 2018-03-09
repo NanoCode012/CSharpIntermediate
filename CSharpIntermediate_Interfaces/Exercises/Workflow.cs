@@ -2,7 +2,7 @@
 
 namespace CSharpIntermediate_Interfaces
 {
-    class Workflow
+    class Workflow : IWorkFlow
     {
         private readonly IList<IActivity> _activity;
         public Workflow()
@@ -14,7 +14,7 @@ namespace CSharpIntermediate_Interfaces
         {
             _activity.Add(activity);
         }
+
         public IEnumerable<IActivity> GetActivities() => _activity;
     }
-
 }

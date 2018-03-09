@@ -44,8 +44,8 @@ namespace CSharpIntermediate_Classes
                 Console.WriteLine("2. Set Stop");
                 Console.WriteLine("3. Get Duration");
                 Console.WriteLine("4. Quit");
-                var opt = Char.GetNumericValue(Console.ReadLine()[0]);
-                if (Math.Abs(opt - 4) < 0.1) break;
+                var opt = (int)(Console.ReadLine()[0] - '0');
+                if (opt == 4) break;
                 switch(opt)
                 {
                     case 1:

@@ -56,6 +56,7 @@
     <Compile Include="Exercises\NotifyReadyForEncodeActivity.cs" />
     <Compile Include="Exercises\NotifyOwnerStartProcessingActivity.cs" />
     <Compile Include="Exercises\ChangeStatusOfEncodeToProcessingInDatabaseActivity.cs" />
+    <Compile Include="Exercises\IWorkFlow.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Extensibility\Log.txt" />
